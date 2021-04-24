@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>API</title>
+</style>
+</head>
+<center>
+<body bgcolor="#140033">
+ <div class="login">
+<br><br><br><br><br><br>
+	<h1 style="color: #ffffff";"><em>USD-INR Prediction</em></h1>
+    <form action="{{ url_for('predict')}}"method="post">
+    	<h1><input type="text" name="Date(yyyy/mm/dd)" placeholder="Date(yyyy/mm/dd)" required="required" /></h1>
+        <h2><button type="submit" style="background-color:#ffffff" class="btn btn-primary btn-block btn-large"><em>Predict</em></button></h2>
+    </form>
+   <br><br>
+   <h1 style="color: #ffffff"><em>
+   {{ prediction_text }}
+   </em></h1>
+ </div>
+</tr>
+</body>
+</center>
+</html>
+<html>
+<left>
+<body>
+<br><br><br><br><br><br><br><br><br><br><br>
+<h4 style="text-align: right;color: #ffffff";"><em>By- Allen Peter</em></h4>
+</left>
+<body>
+</html>

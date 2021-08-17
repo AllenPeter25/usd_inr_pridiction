@@ -45,7 +45,7 @@ def predict():
         count=check-2020
         int_features = int(int_features)
         prediction=model.predict([[int_features]])
-        prediction-=(2.2*count)
+        prediction-=(2.1*count)
         prediction=str(prediction)
         return render_template('index.html', prediction_text='The estimated value on '+features[0]+' is ₹ {}'.format(prediction[2:-2]))
 
